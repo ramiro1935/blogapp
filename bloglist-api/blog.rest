@@ -1,0 +1,55 @@
+###
+
+GET http://localhost:3003/api/blogs/ HTTP/1.1
+
+###
+
+GET http://localhost:3003/api/blogs/60d8dbf0380d80b94b48e33e/ HTTP/1.1
+
+###
+
+POST http://localhost:3003/api/blogs/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlc3Rvcm9vdCIsImlkIjoiNjBkNTJlM2E1ODg1OTZhYjk3N2E0NjVhIiwiaWF0IjoxNjI0NzMxNzE3fQ.uZXYu8ehnY-oa20R2kR8g7sUMat86r0h5KoOa8zb-SE
+
+{
+    "title": "new rainydyssss",
+    "author": "ramiro arivilca",
+    "url": "http:/test",
+    "likes": 23
+}
+
+###
+
+POST http://localhost:3003/api/blogs/60d8dbf0380d80b94b48e33e/comments HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlc3Rvcm9vdCIsImlkIjoiNjBkNTJlM2E1ODg1OTZhYjk3N2E0NjVhIiwiaWF0IjoxNjI0NzMxNzE3fQ.uZXYu8ehnY-oa20R2kR8g7sUMat86r0h5KoOa8zb-SE
+
+{
+    "text": "segundo comentario"
+}
+
+###
+PUT http://localhost:3003/api/blogs/60d7704f22d6c7076034d3fa HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "nessssssssssw blog",
+    "author": "ramiro asdsdsdsarivilca",
+    "url": "http:/test",
+    "likes": 26
+}
+
+###
+
+GET http://localhost:3003/api/blogs/60d7704f22d6c7076034d3fa HTTP/1.1
+
+###
+
+###
+
+DELETE http://localhost:3003/api/blogs/60bed588a7c914f66a4a54be HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJlc3Rvcm9vdCIsImlkIjoiNjBkNTJlM2E1ODg1OTZhYjk3N2E0NjVhIiwiaWF0IjoxNjI0NzMxNzE3fQ.uZXYu8ehnY-oa20R2kR8g7sUMat86r0h5KoOa8zb-SE
+
+###
+
